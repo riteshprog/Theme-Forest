@@ -13,7 +13,7 @@ import Recommendation from './components/Recommendation';
 class App extends Component {
 render(){
     return (
-     <div>
+     <div className="container">
       <Router>
       <NavBar />
       <div className="Route-page">

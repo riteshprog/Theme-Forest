@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import {Bar} from 'react-chartjs-2';
 import {Pie} from 'react-chartjs-2';
 import LineChart from './LineChar'
+import ExampleChart from './PieHalfChart';
+import WordCloud from './WordCloud';
+import WordCloud2 from './WordCloud1';
+
 import { MDBCard, MDBCardBody } from 'mdbreact';
 export default class Vizual extends Component {
 
@@ -45,15 +49,15 @@ export default class Vizual extends Component {
 
 
     return (
-      <div className="container-fluid">
+      <div className="container-fluid chart-type">
         <div className="row">
           <div className="col-md-3">
           <MDBCard>
           <div className="bar-chart">
-            <p>Bar Chart</p>
+            <p>Bar Chart</p> chart-type
             <p>&lt; &gt;</p>
             </div>
-<MDBCardBody>
+            <MDBCardBody>
 
              <Bar
           data={data}
@@ -162,6 +166,44 @@ export default class Vizual extends Component {
 
 </MDBCardBody>
 </MDBCard>
+</div>
+<div className="row">
+  <div className="col-md-6">
+  <h1>Half Circle Pie Chart With Arrow Key </h1>
+
+    <MDBCard>
+      <MDBCardBody>
+        <ExampleChart />
+      </MDBCardBody>
+    </MDBCard>
+  </div>
+  <div className="col-md-6">
+  <h1>Word Cloud1 </h1>
+
+    <MDBCard>
+      <MDBCardBody>
+        <WordCloud />
+      </MDBCardBody>
+    </MDBCard>
+  </div>
+</div>
+<div className="row">
+  <div className="col-md-6">
+  <h1>Word Cloud2 </h1>
+    <MDBCard>
+      <MDBCardBody>
+      <WordCloud2 />
+      </MDBCardBody>
+    </MDBCard>
+  </div>
+  <div className="col-md-6">
+    <h1>Word Cloud3 </h1>
+    <MDBCard>
+      <MDBCardBody>
+        <WordCloud2 />
+      </MDBCardBody>
+    </MDBCard>
+  </div>
 </div>
         </div>
         

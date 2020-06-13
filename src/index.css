@@ -188,3 +188,15 @@
     border-radius: 0.3em;
     transition: all 0.4s;
 }
+
+.chart-type .row .col-md-3, .chart-type .row .col-md-6 {
+	padding: 1rem;
+}
+
+.chart-type h1{
+	font-size:1.5rem;
+	font-weight: 700;
+	background-color: cadetblue;
+	color: cornsilk;
+	padding:.5rem;
+}
