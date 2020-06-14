@@ -5,8 +5,12 @@ import LineChart from './LineChar'
 import ExampleChart from './PieHalfChart';
 import WordCloud from './WordCloud';
 import WordCloud2 from './WordCloud1';
-
+import PngFile from '../assets/most-populated-cities-in.png';
+import SvgFile from '../assets/most-populated-cities-in.svg';
 import { MDBCard, MDBCardBody } from 'mdbreact';
+import GoogleData from './GoogleData';
+import RestApiContent from './RestApiContent';
+import RestApiBar from './RestApiBar'
 export default class Vizual extends Component {
 
   render() {
@@ -205,8 +209,29 @@ export default class Vizual extends Component {
     </MDBCard>
   </div>
 </div>
+<div className="row">
+  <div className="col-md-6">
+  <h1>PNG File From everviz </h1>
+    <MDBCard>
+      <MDBCardBody>
+<img src={PngFile} width={500}  alt="Png file data" />
+      </MDBCardBody>
+    </MDBCard>
+  </div>
+  <div className="col-md-6">
+    <h1>SVG File From everviz </h1>
+    <MDBCard>
+      <MDBCardBody>
+      <img src={SvgFile} width={500}  alt="Png file data" />
+      </MDBCardBody>
+    </MDBCard>
+  </div>
+</div>
+
         </div>
-        
+ <GoogleData />
+ <RestApiContent />
+ <RestApiBar />   
       </div>
     )
   }

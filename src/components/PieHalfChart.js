@@ -11,6 +11,7 @@ const ExampleChart = () => {
   data={[
     { title: 'One', value: 76, color: '#E38627' },
     { title: 'Two', value: 24, color: '#C13C37' },
+    { title: 'three', value: 24, color: '#C15C87' },
   ]}
   lengthAngle={-360} animate
   
