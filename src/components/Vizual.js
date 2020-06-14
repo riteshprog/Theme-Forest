@@ -55,6 +55,13 @@ export default class Vizual extends Component {
     return (
       <div className="container-fluid chart-type">
         <div className="row">
+          <div className="col-md-12">
+          <RestApiContent />
+ <RestApiBar />   
+
+          </div>
+        </div>
+        <div className="row">
           <div className="col-md-3">
           <MDBCard>
           <div className="bar-chart">
@@ -227,11 +234,8 @@ export default class Vizual extends Component {
     </MDBCard>
   </div>
 </div>
-
         </div>
- <GoogleData />
- <RestApiContent />
- <RestApiBar />   
+ {/* <GoogleData /> */}
       </div>
     )
   }
